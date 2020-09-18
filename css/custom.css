@@ -1,0 +1,24 @@
+html {font-family: 'Libre Baskerville', serif; margin: 0; padding: 0; height: 100%;}
+body {height: 100%; margin: 0; padding: 0;}
+* {padding:0px; margin:0px;}
+
+
+.corpo {height: 100%; margin: auto;}
+
+@media only screen and (max-width: 680px) {
+    .corpo img {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 992px){
+    .corpo img {
+        width: 40%;
+    }
+}
+  
+@media only screen and (min-width: 993px){
+    .corpo img {
+        width: 20%;
+    }
+}
