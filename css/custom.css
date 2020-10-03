@@ -4,8 +4,11 @@ body {height: 100%; margin: 0; padding: 0;}
 
 
 .corpo {height: 100%; margin: auto;}
-.botao1 {border-radius: 15px; margin-right: 10px; width: 225px;} 
-.botao2 {border-radius: 15px; margin-left: 10px; width: 225px;}
+.botao1 {border-radius: 15px; width: 225px;} 
+.botao2 {border-radius: 15px; width: 225px;}
+.botao3{border-radius: 15px; margin-top: 10px;
+width: 225px;}
+
 #mostrarnome {font-size: 50px;}
 
 @media only screen and (max-width: 680px) {
@@ -14,7 +17,12 @@ body {height: 100%; margin: 0; padding: 0;}
     }
 }
 
-@media only screen and (min-width: 601px) and (max-width: 992px){
+@media only screen and (min-width: 601px) {
+	.botao1 {border-radius: 15px; margin-right: 10px; width: 225px;} 
+	.botao2 {border-radius: 15px; margin-left: 10px; width: 225px;}
+}
+
+@media only screen and (min-width: 680px) and (max-width: 992px){
     .corpo img {
         width: 40%;
     }

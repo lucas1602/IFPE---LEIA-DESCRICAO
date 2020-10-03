@@ -9,7 +9,6 @@
     $nome = $_SESSION['nome'];
 
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,16 +27,16 @@
 </head>
 
 <body>
-	<div class="blue darken-5 white-text center" style="height: 800px;">
-        <p id="mostrarnome">Olá, <?php echo $nome?><p>
-        <img src="../img/fisica.png" alt="" class="responsive-img" width="250px">
-        <h3>Agora escolha a matéria!</h3>
-        <a href="areamat.php" class="waves-effect waves-light btn-large blue lighten-1 botao1"><i class="material-icons right">calculate</i>Matemática</a>
-        <br class="hide-on-med-and-up">
-        <br class="hide-on-med-and-up">
-        <a class="waves-effect waves-light btn-large blue lighten-1 botao2"><i class="material-icons right">science</i>Física</a>
-        <br><br><br><br><br>
-    	<a class="white-text btn blue" href="sair.php">Sair</a>
-	</div>
+    <div class="blue darken-5 white-text center" style="height: 800px;">
+        <br>
+        <p id="mostrarnome">Matemática<p><br>
+        <img src="../img/matematica.png" alt="" class="responsive-img" width="250px"><br><br>
+        <a class="waves-effect waves-light btn-large  indigo lighten-2 botao3"><i class="material-icons right">attachment</i>Assuntos</a><br><br>
+        <a class="waves-effect waves-light btn-large indigo lighten-2 botao3"><i class="material-icons right">create</i>Questões</a><br><br>
+        <a href="calcular.php" class="waves-effect waves-light btn-large indigo lighten-2 botao3"><i class="material-icons right">calculate</i>Calcular Áreas</a>
+        <br><br><br><br>
+        <a class="white-text btn indigo lighten-2" href="escolha.php">Voltar</a>
+    </div>
 </body>
+
 </html>
