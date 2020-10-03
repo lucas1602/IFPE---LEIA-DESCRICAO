@@ -32,36 +32,25 @@
     	<div class="col s3"></div>
     	<?php if($assunto == "area"){ ?>
 	    	<div class="col s6" style="padding: 20px;">
-	    		  <div class="input-field col s12 white-text">
-				    <select>
-				      <option value="" selected>Escolha uma figura</option>
-				      <option value="1">Quadrado</option>
-				      <option value="2">Retângulo</option>
-				      <option value="3">Círculo</option>
-				      <option value="3">Trapézio</option>
-				      <option value="3">Losango</option>
-				      <option value="3">Triângulo Quaisquer</option>
-				      <option value="3">Triângulo Retângulo</option>
-				      <option value="3">Triângulo Equilátero</option>
-				    </select>
-				    <label>Área</label>
-				  </div>
+		    	<a href="calculo.php?figura=quadrado" class="waves-effect waves-light btn-large blue lighten-1 botao3">Quadrado</a>
+	            <a href="calculo.php?figura=retangulo" class="waves-effect waves-light btn-large blue lighten-1 botao3">Retângulo</a>
+	            <a href="calculo.php?figura=circulo" class="waves-effect waves-light btn-large blue lighten-1 botao3">Círculo</a>
+	            <a href="calculo.php?figura=trapezio" class="waves-effect waves-light btn-large blue lighten-1 botao3">Trapézio</a>
+	            <a href="calculo.php?figura=losango" class="waves-effect waves-light btn-large blue lighten-1 botao3">Losango</a>
+	            <a href="calculo.php?figura=t-qualquer" class="waves-effect waves-light btn-large blue lighten-1 botao3">Triângulo qualquer</a>
+	            <a href="calculo.php?figura=t-retangulo" class="waves-effect waves-light btn-large blue lighten-1 botao3">Triângulo retângulo</a>
+	            <a href="calculo.php?figura=t-equilatero" class="waves-effect waves-light btn-large blue lighten-1 botao3">Triângulo equilátero</a>
+	            <br>
 	    	</div>
 	    <?php } elseif($assunto == "volume") {?>
 	    	<div class="col s6" style="padding: 20px;">
-	    		  <div class="input-field col s12 white-text">
-				    <select>
-				      <option value="" selected>Escolha</option>
-				      <option value="1">Cubo</option>
-				      <option value="2">Prisma de base triangular</option>
-				      <option value="3">Prisma de base retangular</option>
-				      <option value="3">Cilindro</option>
-				      <option value="3">Cone</option>
-				      <option value="3">Pirâmide</option>
-				      <option value="3">Esfera</option>
-				    </select>
-				    <label>Volume</label>
-				  </div>
+		    	<a href="calculo.php?figura=cubo" class="waves-effect waves-light btn-large blue lighten-1 botao3">Cubo</a>
+	            <a href="calculo.php?figura=prisma-retan" class="waves-effect waves-light btn-large blue lighten-1 botao3">Prisma retan</a>
+	            <a href="calculo.php?figura=prisma-trian" class="waves-effect waves-light btn-large blue lighten-1 botao3">Prisma trian</a>
+	            <a href="calculo.php?figura=cilindro" class="waves-effect waves-light btn-large blue lighten-1 botao3">Cilindro</a>
+	            <a href="calculo.php?figura=cone" class="waves-effect waves-light btn-large blue lighten-1 botao3">Cone</a>
+	            <a href="calculo.php?figura=piramide" class="waves-effect waves-light btn-large blue lighten-1 botao3">Pirâmide</a>
+	            <a href="calculo.php?figura=esfera" class="waves-effect waves-light btn-large blue lighten-1 botao3">Esfera</a>	    		  
 	    	</div>
 	    <?php } ?>
     	<div class="col s3"></div>
