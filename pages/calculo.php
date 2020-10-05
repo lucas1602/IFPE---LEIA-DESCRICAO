@@ -1,6 +1,6 @@
 <?php
 
-	session_start();
+    session_start();
     if(!isset($_SESSION['nome'])){
         header('location: ../index.php');
         exit;
@@ -29,10 +29,10 @@
 <body>
 
     <div class="blue darken-5 white-text center row" style="height: 800px;">
-    	<div class="col s3"></div>
-    	<?php if($figura == "quadrado"){ ?>
-	    	<div class="col s6" style="padding: 20px;">
-		    	<img src="../img/calcular/quadrado.png" alt="" class="responsive-img" width="250px"><br>
+        <div class="col s3"></div>
+        <?php if($figura == "quadrado"){ ?>
+            <div class="col s6" style="padding: 20px;">
+                <img src="../img/calcular/quadrado.png" alt="" class="responsive-img" width="250px"><br>
                 <div class="input-field col s12">
                   <form method="POST">
                       <input placeholder="Digite o Lado" name="lado" id="lado" type="text" class="center validate white-text blue darken-4">
@@ -49,10 +49,10 @@
                         <h5>PREENCHA OS CAMPOS ACIMA</h5>
                     <?php endif; ?>
                 <?php } ?>
-	    	</div>
-	    <?php } elseif($figura == "retangulo") {?>
-	    	<div class="col s6" style="padding: 20px;">
-   		       <img src="../img/calcular/retangulo.png" alt="" class="responsive-img" width="250px"><br>
+            </div>
+        <?php } elseif($figura == "retangulo") {?>
+            <div class="col s6" style="padding: 20px;">
+               <img src="../img/calcular/retangulo.png" alt="" class="responsive-img" width="250px"><br>
                <div class="input-field col s12">
                   <form method="POST">
                       <input placeholder="Digite a base" name="base" id="base" type="text" class="center validate white-text blue darken-4 col s5">
@@ -73,17 +73,156 @@
                         <h5>PREENCHA OS CAMPOS ACIMA</h5>
                     <?php endif; ?>
                 <?php } ?>
-	    	</div>
-	    <?php } else if($figura == "circulo") { ?>
+            </div>
+        <?php } else if($figura == "circulo") { ?>
             <div class="col s6" style="padding: 20px;">
                 <img src="../img/calcular/circulo.png" alt="" class="responsive-img" width="250px"><br>
+                <div class="input-field col s12">
+                <form method="POST">
+                <div class="col s3"></div>
+                <input placeholder="Digite o raio" name="raio" id="raio" type="text" class="center validate white-text blue darken-4 col s6">
+                <div class="col s3"></div>
+                <br><br><br>
+                <button type="submit" class="btn blue lighten-1 waves-effect waves-light" name="botao" id="botao">Calcular</button>
+           </form>
             </div>
+            <?php if(isset($_POST['raio'])){
+                $raio = $_POST['raio'];
+                if(!empty($raio)):
+                    $resultado = 3.14*$raio*$raio;?>
+                    <h5><?php echo $raio. "". $raio. "". "PI"."=". $resultado ?></h5>
+                    <h3>Resultado: <?php echo $resultado ?></h3>
+                <?php else: ?>
+                    <h5>PREENCHA O CAMPO ACIMA</h5>
+                <?php endif; ?>
+            <?php } ?>
+        <?php } else if($figura == "trapezio") { ?>
+            <div class="col s11" style="padding: 20px">
+            <div class="col s1"></div>
+        <img src="../img/calcular/trapezio.png" alt="" class="responsive-img" width="250px"><br>
+        <div class="input-field col s12">
+                <form method="POST">
+                <div class="col s1"></div>
+                <input placeholder="Digite a Base Maior" name="basemaior" id="basemaior" type="text" class="center validate white-text blue darken-4 col s3">
+                <div class="col s1"></div>
+                <input placeholder="Digite a Base Menor" name="basemenor" id="basemenor" type="text" class="center validate white-text blue darken-4 col s3">
+                <div class="col s1"></div>
+                <input placeholder="Digite a Altura" name="altura" id="altura" type="text" class="center validate white-text blue darken-4 col s3">
+                <div class="col s1"></div>
+                <br><br>
+                <button type="submit" class="btn blue lighten-1 waves-effect waves-light" name="botao" id="botao">Calcular</button>
+                </form>
+                </div>
+                <?php if(isset($_POST['basemaior'])){
+                    $basemaior = $_POST['basemaior'];
+                    $basemenor = $_POST['basemenor'];
+                    $altura = $_POST['altura'];
+                    if(!empty($basemaior) && !empty($basemenor) && !empty($altura)):
+                    $resultado = $basemaior*$basemenor*$altura/2; ?>
+                    <h5><?php echo $basemaior."".$basemenor."".$altura."/"."2". "=". $resultado?></h5>
+                    <h3> Resultado: <?php echo $resultado ?></h3>
+                <?php else: ?>
+                    <h5>PREENCHA OS CAMPOS ACIMA</h5>
+                <?php endif; ?>
         <?php } ?>
-        <?php ?>
-    	<div class="col s3"></div>
-    </div>
+                <?php } else if($figura == "losango"){ ?>
+                    <div class="col s12" style="padding: 20px;">
+               <img src="../img/calcular/losango.png" alt="" class="responsive-img" width="250px"><br>
+               <div class="input-field col s12">
+                  <form method="POST">
+                      <input placeholder="Digite a Diagonal Maior" name="diagmaior" id="diagmaior" type="text" class="center validate white-text blue darken-4 col s5">
+                      <div class="col s2"></div>
+                      <input placeholder="Digite a Diagonal Menor" name="diagmenor" id="diagmenor" type="text" class="center validate white-text blue darken-4 col s5">
+                      <br><br>
+                      <button type="submit" class="btn blue lighten-1 waves-effect waves-light" name="botao" id="botao">Calcular</button>
+                      </form>
+                      </div>
+                <?php if(isset($_POST['diagmaior'])){
+                    $diagmaior = $_POST['diagmaior'];
+                    $diagmenor = $_POST['diagmenor'];
+                    if(!empty($diagmaior) && !empty($diagmenor)):
+                        $resultado = $diagmaior*$diagmenor/2; ?>
+                        <h5><?php echo $diagmaior. "*". $diagmenor. "/"."2". "=". $resultado?></h5>
+                        <h3>Resultado: <?php echo $resultado?></h3>
+                <?php else: ?>
+                <h5>PREENCHA OS CAMPOS ACIMA</h5>
+                <?php endif; ?>
+                <?php }?>
+                </div>
+            <?php } else if($figura == "t-qualquer"){ ?>
+                    <div class="col s12" style="padding: 20px;">
+               <img src="../img/calcular/trianguloqualquer.png" alt="" class="responsive-img" width="250px"><br>
+               <div class="input-field col s12">
+                  <form method="POST">
+                      <input placeholder="Digite a base" name="base" id="base" type="text" class="center validate white-text blue darken-4 col s5">
+                      <div class="col s2"></div>
+                      <input placeholder="Digite a altura" name="altura" id="altura" type="text" class="center validate white-text blue darken-4 col s5">
+                      <br><br>
+                      <button type="submit" class="btn blue lighten-1 waves-effect waves-light" name="botao" id="botao">Calcular</button>
+                      </form>
+                      </div>
+                <?php if(isset($_POST['base'])){
+                    $base = $_POST['base'];
+                    $altura = $_POST['altura'];
+                    if(!empty($base) && !empty($altura)):
+                        $resultado = $base*$altura/2; ?>
+                        <h5><?php echo $base. "*". $altura. "/"."2". "=". $resultado?></h5>
+                        <h3>Resultado: <?php echo $resultado?></h3>
+                <?php else: ?>
+                <h5>PREENCHA OS CAMPOS ACIMA</h5>
+                <?php endif; ?>
+                <?php } ?>
+            <?php } else if($figura == "t-retangulo"){ ?>
+                    <div class="col s12" style="padding: 20px;">
+               <img src="../img/calcular/trianguloretangulo.png" alt="" class="responsive-img" width="250px"><br>
+               <div class="input-field col s12">
+                  <form method="POST">
+                      <input placeholder="Digite a base" name="base" id="base" type="text" class="center validate white-text blue darken-4 col s5">
+                      <div class="col s2"></div>
+                      <input placeholder="Digite a altura" name="altura" id="altura" type="text" class="center validate white-text blue darken-4 col s5">
+                      <br><br>
+                      <button type="submit" class="btn blue lighten-1 waves-effect waves-light" name="botao" id="botao">Calcular</button>
+                      </form>
+                      </div>
+                <?php if(isset($_POST['base'])){
+                    $base = $_POST['base'];
+                    $altura = $_POST['altura'];
+                    if(!empty($base) && !empty($altura)):
+                        $resultado = $base*$altura/2; ?>
+                        <h5><?php echo $base. "*". $altura. "/"."2". "=". $resultado?></h5>
+                        <h3>Resultado: <?php echo $resultado?></h3>
+                <?php else: ?>
+                <h5>PREENCHA OS CAMPOS ACIMA</h5>
+                <?php endif; ?>
+                <?php } ?>
+                <?php } else if($figura == "t-equilatero"){ ?>
+                    <div class="col s12" style="padding: 20px;">
+               <img src="../img/calcular/trianguloequilatero.png" alt="" class="responsive-img" width="250px"><br>
+               <div class="input-field col s12">
+                  <form method="POST">
+                  <div class="col s3"></div>
+                      <input placeholder="Digite o lado" name="lado" id="lado" type="text" class="center validate white-text blue darken-4 col s6">
+                      <div class="col s3"></div>
+                      <br><br><br>
+                      <button type="submit" class="btn blue lighten-1 waves-effect waves-light" name="botao" id="botao">Calcular</button>
+                      </form>
+                      </div>
+                <?php if(isset($_POST['lado'])){
+                    $lado = $_POST['lado'];
+                    if(!empty($lado)):
+                        $resultado = 1.732*$lado/4; ?>
+                        <h5><?php echo $lado. "*". "√3". "/"."4". "=". $resultado?></h5>
+                        <h3>Resultado: <?php echo $resultado?></h3>
+                <?php else: ?>
+                <h5>PREENCHA OS CAMPOS ACIMA</h5>
+                <?php endif; ?>
+                <?php } ?>
+                <?php } ?>
 
-	<!--Jquery-->
+        <div class="col s3"></div>
+    </?>
+
+    <!--Jquery-->
     <script src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <!-- Compiled and minified JavaScript -->
@@ -91,7 +230,7 @@
     <!--Inicializações-->
     <script>
         $(document).ready(function () {
-			$('select').formSelect();	
+            $('select').formSelect();   
         });
     </script>
 </body>
