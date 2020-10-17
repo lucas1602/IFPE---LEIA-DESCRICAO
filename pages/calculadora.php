@@ -50,9 +50,22 @@
 	            <a href="calculo.php?figura=cilindro" class="waves-effect waves-light btn-large blue lighten-1 botao3">Cilindro</a>
 	            <a href="calculo.php?figura=cone" class="waves-effect waves-light btn-large blue lighten-1 botao3">Cone</a>
 	            <a href="calculo.php?figura=piramide" class="waves-effect waves-light btn-large blue lighten-1 botao3">Pirâmide</a>
-	            <a href="calculo.php?figura=esfera" class="waves-effect waves-light btn-large blue lighten-1 botao3">Esfera</a>	    		  
+	            <a href="calculo.php?figura=esfera" class="waves-effect waves-light btn-large blue lighten-1 botao3">Esfera</a>
+                <br>	  
 	    	</div>
-	    <?php } ?>
+	    <?php } elseif($assunto == "potencia") {
+                header('location: calculo.php?figura=potencia');
+              } else if($assunto == "raiz"){
+                header('location: calculo.php?figura=raiz');
+              } else if($assunto == "fracao") { ?>
+                <div class="col s6" style="padding: 20px;">
+                    <a href="calculo.php?figura=soma-frac" class="waves-effect waves-light btn-large blue lighten-1 botao3">Soma de fração</a>
+                    <a href="calculo.php?figura=subtracao-frac" class="waves-effect waves-light btn-large blue lighten-1 botao3">Subtração</a>
+                    <a href="calculo.php?figura=multiplicacao-frac" class="waves-effect waves-light btn-large blue lighten-1 botao3">Multiplicação</a>
+                    <a href="calculo.php?figura=divisao-frac" class="waves-effect waves-light btn-large blue lighten-1 botao3">Divisão</a>
+                    <br>      
+                </div>      
+        <?php } ?>
     	<div class="col s3"></div>
     </div>
 
