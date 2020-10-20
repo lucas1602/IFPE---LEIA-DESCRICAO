@@ -31,10 +31,9 @@ Class Assunto {
 		}
 		else
 		{
-			$sql = $pdo->prepare("INSERT INTO assuntos (titulo, descricao, alternativa) VALUES (:t, :d, :a)");
+			$sql = $pdo->prepare("INSERT INTO assuntos (titulo, descricao) VALUES (:t, :d)");
 			$sql->bindValue(":t", $titulo);
 			$sql->bindValue(":d", $descricao);
-			$sql->bindValue(":a", "X");
 			$sql->execute();
 			return true;
 		}
