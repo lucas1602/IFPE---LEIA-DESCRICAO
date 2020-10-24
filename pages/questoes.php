@@ -38,15 +38,19 @@
 <body>
 
     <div class="blue darken-5 white-text center row" style="height: 800px;">
-      <div class="col s3"></div>
-      <div class="input-field col s6">
+      <div class="col s1"></div>
+      <div class="input-field col s10">
         <form method="POST">
             <input placeholder="Título" name="titulo" type="text" class="center validate white-text blue darken-4">
             <textarea placeholder="Descrição" name="descricao" type="text" class="center validate white-text blue darken-4"></textarea><br><br>
+            <input placeholder="Correta" name="correta" type="text" class="col s3 center validate white-text blue darken-4">
+            <input placeholder="Errada" name="errada1" type="text" class="col s3 center validate white-text blue darken-4">
+            <input placeholder="Errada" name="errada2" type="text" class="col s3 center validate white-text blue darken-4">
+            <input placeholder="Errada" name="errada3" type="text" class="col s3 center validate white-text blue darken-4">
             <button type="submit" class="btn blue lighten-1 waves-effect waves-light" name="botao">Postar</button>
         </form>
       </div>
-      <div class="col s3"></div>
+      <div class="col s1"></div>
     </div>
 
     <?php
@@ -55,12 +59,17 @@
     {
         $titulo = addslashes($_POST['titulo']);
         $descricao = addslashes($_POST['descricao']);
-        if(!empty($titulo) && !empty($descricao))
+        $correta = addslashes($_POST['correta']);
+        $errada1 = addslashes($_POST['errada1']);
+        $errada2 = addslashes($_POST['errada2']);
+        $errada3 = addslashes($_POST['errada3']);
+
+        if(!empty($titulo) && !empty($descricao) && !empty($correta)  && !empty($errada1) && !empty($errada2) && !empty($errada3))
         {
             $p->conectar("extensao","localhost","root","");
             if ($p->msgErro=="")
             {
-              if ($p->novaquestao($titulo, $descricao))
+              if ($p->novaquestao($titulo, $descricao, $correta, $errada1, $errada2, $errada3))
               {
                   echo "Postado com sucesso!";
               }

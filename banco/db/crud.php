@@ -16,8 +16,27 @@ Class Assunto {
 		}
 	}
 
+	public function ler($id)
+	{
+		global $pdo;
+		global $msgErro;
 
-	public function novaquestao($titulo, $descricao)
+		$sql= $pdo->prepare("SELECT * FROM assuntos WHERE id=:i");
+		$sql->bindValue(":i", $id);
+		$sql->execute();
+		if($sql->rowCount()>0)
+		{
+			$dados = $sql->fetch();
+			return $dados;
+		}
+		else
+		{
+			return [];
+		}
+	}
+
+
+	public function novaquestao($titulo, $descricao, $correta, $errada1, $errada2, $errada3)
 	{
 		global $pdo;
 		#verifica se existe assunto
@@ -31,13 +50,16 @@ Class Assunto {
 		}
 		else
 		{
-			$sql = $pdo->prepare("INSERT INTO assuntos (titulo, descricao) VALUES (:t, :d)");
+			$sql = $pdo->prepare("INSERT INTO assuntos (titulo, descricao, correta, errada1, errada2, errada3) VALUES (:t, :d, :c, :e1, :e2, :e3)");
 			$sql->bindValue(":t", $titulo);
 			$sql->bindValue(":d", $descricao);
+			$sql->bindValue(":c", $correta);
+			$sql->bindValue(":e1", $errada1);
+			$sql->bindValue(":e2", $errada2);
+			$sql->bindValue(":e3", $errada3);
 			$sql->execute();
 			return true;
 		}
-
 	}
 }
 

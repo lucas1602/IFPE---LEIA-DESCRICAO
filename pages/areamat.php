@@ -32,7 +32,7 @@
         <p id="mostrarnome">Matemática<p><br>
         <img src="../img/matematica.png" alt="" class="responsive-img" width="250px"><br><br>
         <a class="waves-effect waves-light btn-large  indigo lighten-2 botao3"><i class="material-icons right">attachment</i>Assuntos</a><br><br>
-        <a class="waves-effect waves-light btn-large indigo lighten-2 botao3"><i class="material-icons right">create</i>Questões</a><br><br>
+        <a href="listadequestoes.php" class="waves-effect waves-light btn-large indigo lighten-2 botao3"><i class="material-icons right">create</i>Questões</a><br><br>
         <a href="calcular.php" class="waves-effect waves-light btn-large indigo lighten-2 botao3"><i class="material-icons right">calculate</i>Calcular Áreas</a>
         <br><br><br><br>
         <a class="white-text btn indigo lighten-2" href="escolha.php">Voltar</a>
