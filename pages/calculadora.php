@@ -1,6 +1,6 @@
 <?php
 
-	session_start();
+    session_start();
     if(!isset($_SESSION['nome'])){
         header('location: ../index.php');
         exit;
@@ -29,36 +29,39 @@
 <body>
 
     <div class="blue darken-5 white-text center row" style="height: 800px;">
-    	<div class="col s3"></div>
-    	<?php if($assunto == "area"){ ?>
-	    	<div class="col s6" style="padding: 20px;">
-		    	<a href="calculo.php?figura=quadrado" class="waves-effect waves-light btn-large blue lighten-1 botao3">Quadrado</a>
-	            <a href="calculo.php?figura=retangulo" class="waves-effect waves-light btn-large blue lighten-1 botao3">Retângulo</a>
-	            <a href="calculo.php?figura=circulo" class="waves-effect waves-light btn-large blue lighten-1 botao3">Círculo</a>
-	            <a href="calculo.php?figura=trapezio" class="waves-effect waves-light btn-large blue lighten-1 botao3">Trapézio</a>
-	            <a href="calculo.php?figura=losango" class="waves-effect waves-light btn-large blue lighten-1 botao3">Losango</a>
-	            <a href="calculo.php?figura=t-qualquer" class="waves-effect waves-light btn-large blue lighten-1 botao3">Triângulo qualquer</a>
-	            <a href="calculo.php?figura=t-retangulo" class="waves-effect waves-light btn-large blue lighten-1 botao3">Triângulo retângulo</a>
-	            <a href="calculo.php?figura=t-equilatero" class="waves-effect waves-light btn-large blue lighten-1 botao3">Triângulo equilátero</a>
-	            <br>
-	    	</div>
-	    <?php } elseif($assunto == "volume") {?>
-	    	<div class="col s6" style="padding: 20px;">
-		    	<a href="calculo.php?figura=cubo" class="waves-effect waves-light btn-large blue lighten-1 botao3">Cubo</a>
-	            <a href="calculo.php?figura=prisma-retan" class="waves-effect waves-light btn-large blue lighten-1 botao3">Prisma retan</a>
-	            <a href="calculo.php?figura=prisma-trian" class="waves-effect waves-light btn-large blue lighten-1 botao3">Prisma trian</a>
-	            <a href="calculo.php?figura=cilindro" class="waves-effect waves-light btn-large blue lighten-1 botao3">Cilindro</a>
-	            <a href="calculo.php?figura=cone" class="waves-effect waves-light btn-large blue lighten-1 botao3">Cone</a>
-	            <a href="calculo.php?figura=piramide" class="waves-effect waves-light btn-large blue lighten-1 botao3">Pirâmide</a>
-	            <a href="calculo.php?figura=esfera" class="waves-effect waves-light btn-large blue lighten-1 botao3">Esfera</a>
-                <br>	  
-	    	</div>
-	    <?php } elseif($assunto == "potencia") {
+        <div class="col s3"></div>
+        <?php if($assunto == "area"){ ?>
+            <div class="col s6" style="padding: 20px;">
+                <img src="../img/areas2.png" alt="" class="responsive-img" width="450px"><br><br>
+                <a href="calculo.php?figura=quadrado" class="waves-effect waves-light btn-large blue lighten-1 botao3">Quadrado</a>
+                <a href="calculo.php?figura=retangulo" class="waves-effect waves-light btn-large blue lighten-1 botao3">Retângulo</a>
+                <a href="calculo.php?figura=circulo" class="waves-effect waves-light btn-large blue lighten-1 botao3">Círculo</a>
+                <a href="calculo.php?figura=trapezio" class="waves-effect waves-light btn-large blue lighten-1 botao3">Trapézio</a>
+                <a href="calculo.php?figura=losango" class="waves-effect waves-light btn-large blue lighten-1 botao3">Losango</a>
+                <a href="calculo.php?figura=t-qualquer" class="waves-effect waves-light btn-large blue lighten-1 botao3">Triângulo qualquer</a>
+                <a href="calculo.php?figura=t-retangulo" class="waves-effect waves-light btn-large blue lighten-1 botao3">Triângulo retângulo</a>
+                <a href="calculo.php?figura=t-equilatero" class="waves-effect waves-light btn-large blue lighten-1 botao3">Triângulo equilátero</a>
+                <br>
+            </div>
+        <?php } elseif($assunto == "volume") {?>
+            <div class="col s6" style="padding: 20px;">
+            <img src="../img/volume3.png" alt="" class="responsive-img" width="450px"><br><br>
+                <a href="calculo.php?figura=cubo" class="waves-effect waves-light btn-large blue lighten-1 botao3">Cubo</a>
+                <a href="calculo.php?figura=prisma-retan" class="waves-effect waves-light btn-large blue lighten-1 botao3">Prisma retan</a>
+                <a href="calculo.php?figura=prisma-trian" class="waves-effect waves-light btn-large blue lighten-1 botao3">Prisma trian</a>
+                <a href="calculo.php?figura=cilindro" class="waves-effect waves-light btn-large blue lighten-1 botao3">Cilindro</a>
+                <a href="calculo.php?figura=cone" class="waves-effect waves-light btn-large blue lighten-1 botao3">Cone</a>
+                <a href="calculo.php?figura=piramide" class="waves-effect waves-light btn-large blue lighten-1 botao3">Pirâmide</a>
+                <a href="calculo.php?figura=esfera" class="waves-effect waves-light btn-large blue lighten-1 botao3">Esfera</a>
+                <br>      
+            </div>
+        <?php } elseif($assunto == "potencia") {
                 header('location: calculo.php?figura=potencia');
               } else if($assunto == "raiz"){
                 header('location: calculo.php?figura=raiz');
               } else if($assunto == "fracao") { ?>
                 <div class="col s6" style="padding: 20px;">
+                <img src="../img/frac.png" alt="" class="responsive-img" width="250px"><br><br>
                     <a href="calculo.php?figura=soma-frac" class="waves-effect waves-light btn-large blue lighten-1 botao3">Soma de fração</a>
                     <a href="calculo.php?figura=subtracao-frac" class="waves-effect waves-light btn-large blue lighten-1 botao3">Subtração</a>
                     <a href="calculo.php?figura=multiplicacao-frac" class="waves-effect waves-light btn-large blue lighten-1 botao3">Multiplicação</a>
@@ -66,10 +69,10 @@
                     <br>      
                 </div>      
         <?php } ?>
-    	<div class="col s3"></div>
+        <div class="col s3"></div>
     </div>
 
-	<!--Jquery-->
+    <!--Jquery-->
     <script src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <!-- Compiled and minified JavaScript -->
@@ -77,7 +80,7 @@
     <!--Inicializações-->
     <script>
         $(document).ready(function () {
-			$('select').formSelect();	
+            $('select').formSelect();   
         });
     </script>
 </body>

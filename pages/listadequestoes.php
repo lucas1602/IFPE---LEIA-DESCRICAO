@@ -32,7 +32,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Adicionar assunto</title>
+    <title>Questões</title>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Let browser know website is optimized for mobile-->
@@ -46,46 +46,129 @@
 </head>
 <body>
 
+    <?php
+      $randomico = rand(1, 20);
+      $altcorreta = "value=\"correta\"";
+      $alterrada = "value=\"errada\"";
+    ?>
+
     <div class="blue darken-5 white-text center row" style="height: 800px;">
       <div class="col s1"></div>
       <div class="input-field col s10">
         <h1><?php echo $dados['titulo'] ?></h1>
         <h3><?php echo $dados['descricao'] ?></h3>
         <br><br>
-        <div class="cols 12">
+        <form method="POST" class="cols 12">
           <div class="col s3">
             <label>
-            <input class="with-gap" name="group1" type="radio"  />
-            <span class="white-text"><?php echo $dados['correta'] ?></span>
+            <?php if($randomico <= 5){
+            ?>
+              <input class="with-gap" name="group1" type="radio" <?php echo $altcorreta?>/>
+              <span class="white-text"><?php echo $dados['correta'] ?></span>
+            <?php
+            }else{
+            ?>
+              <input class="with-gap" name="group1" type="radio" <?php echo $alterrada?>/>
+              <span class="white-text"><?php echo $dados['errada1'] ?></span>
+            <?php
+            }
+            ?>
             </label>
           </div>
           <div class="col s3">
             <label>
-            <input class="with-gap" name="group2" type="radio"  />
-            <span class="white-text"><?php echo $dados['errada1'] ?></span>
+            <?php if($randomico > 5 && $randomico <= 10){
+            ?>
+              <input class="with-gap" name="group1" type="radio" <?php echo $altcorreta?>/>
+              <span class="white-text"><?php echo $dados['correta'] ?></span>
+            <?php
+            }else{
+            ?>
+              <input class="with-gap" name="group1" type="radio" <?php echo $alterrada?>/>
+              <span class="white-text"><?php echo $dados['errada2'] ?></span>
+            <?php
+            }
+            ?>
             </label>
           </div>
           <div class="col s3">
             <label>
-            <input class="with-gap" name="group3" type="radio"  />
-            <span class="white-text"><?php echo $dados['errada2'] ?></span>
+            <?php if($randomico > 10 && $randomico <= 15){
+            ?>
+              <input class="with-gap" name="group1" type="radio" <?php echo $altcorreta?>/>
+              <span class="white-text"><?php echo $dados['correta'] ?></span>
+            <?php
+            }else{
+            ?>
+              <input class="with-gap" name="group1" type="radio" <?php echo $alterrada?>/>
+              <span class="white-text"><?php echo $dados['errada3'] ?></span>
+            <?php
+            }
+            ?>
             </label>
           </div>
           <div class="col s3">
             <label>
-            <input class="with-gap" name="group4" type="radio"  />
-            <span class="white-text"><?php echo $dados['errada3'] ?></span>
+            <?php if($randomico > 15 && $randomico <= 20){
+            ?>
+              <input class="with-gap" name="group1" type="radio" <?php echo $altcorreta?>/>
+              <span class="white-text"><?php echo $dados['correta'] ?></span>
+            <?php
+            }else{
+            ?>
+              <input class="with-gap" name="group1" type="radio" <?php echo $alterrada?>/>
+              <?php
+              if($randomico <= 5){
+              ?>
+                <span class="white-text"><?php echo $dados['errada1'] ?></span>
+              <?php
+              }else if($randomico <= 10){
+              ?>
+                <span class="white-text"><?php echo $dados['errada2'] ?></span>
+              <?php
+              }else if($randomico <= 15){
+              ?>
+                <span class="white-text"><?php echo $dados['errada3'] ?></span>
+            <?php
+              }
+            }
+            ?>
             </label>
           </div>
-        </div>
-
+          <br><br> 
+          <button type="submit" class="btn green waves-effect waves-light" name="confirmar">Confirmar</button>
+        </form>
+        <br>
+        <?php
+        if(!empty($_GET["alternativa"])){
+          if($_GET["alternativa"] == "correta"){
+          ?>
+            <div class="green">Alternativa correta</div>
+          <?php
+          }else{
+          ?>
+            <div class="red">Alternativa incorreta, tente novamente.</div>
+          <?php
+          }
+        }
+        ?>
         <br><br>
-        <a href="listadequestoes.php?id=<?php echo $id-1 ?>" class="btn">Anterior</a>
-        <a href="listadequestoes.php?id=<?php echo $id+1 ?>" class="btn">Próximo</a>
+        <a href="listadequestoes.php?id=<?php echo $id-1 ?>" class="btn blue darken-2">Anterior</a>
+        <a href="listadequestoes.php?id=<?php echo $id+1 ?>" class="btn blue darken-2">Próximo</a>
 
       </div>
       <div class="col s1"></div>
     </div>
+
+    <?php
+      if(isset($_POST["group1"])){
+        $tipo = $_POST["group1"];
+        header("location: listadequestoes.php?alternativa=$tipo&id=$id");  
+      }else{
+        echo "nada selecionado";
+      }
+
+    ?>
 
     <!--Jquery-->
     <script src="https://code.jquery.com/jquery-3.5.1.js"
