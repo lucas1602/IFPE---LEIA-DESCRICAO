@@ -7,13 +7,17 @@
     }
 
     $nome = $_SESSION['nome'];
+    require_once '../banco/db/crud.php';
+    $p = new Assunto;
+
+    $p->conectar("extensao","localhost","tvpolemicaipojuca","wanderssonipojuca");
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Adicionar assunto</title>
+    <title>Questões</title>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Let browser know website is optimized for mobile-->
@@ -26,24 +30,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <div class="blue darken-5 white-text center row" style="height: 800px;">
       <div class="col s3"></div>
-      <div class="col s6">
-      <div class="card col s6">
-        <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="../img/fisica.png">
-        </div>
-        <div class="card-content">
-          <span class="card-title activator grey-text text-darken-4">Titulo<i class="material-icons right">more_vert</i></span>
-          <p><a href="#">Link aqui</a></p>
-        </div>
-        <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4">Titulo<i class="material-icons right">close</i></span>
-          <p class="grey-text text-darken-4">Resumo aqui.</p>
-        </div>
-      </div>
-      </div>
+      <?php
+        for($i = 1; $i <= 200; $i+=1){
+          $dados = $p->lerassunto($i);
+          if(!empty($dados)){
+            ?>
+              <div class="col s6">
+              <div class="card col s6">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src=<?php echo $dados['imagem']; ?>>
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4"><?php echo $dados['titulo']; ?><i class="material-icons right">more_vert</i></span>
+                  <p><a href="#">Link aqui</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4"><?php echo $dados['titulo']; ?><i class="material-icons right">close</i></span>
+                  <p class="grey-text text-darken-4"><?php echo $dados['descricao']; ?></p>
+                </div>
+              </div>
+              </div>
+            <?php
+          }else{
+            break;
+          }
+        }
+      ?>
       <div class="col s3"></div>
     </div>
     <!--Jquery-->

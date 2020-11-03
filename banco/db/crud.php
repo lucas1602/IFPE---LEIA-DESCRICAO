@@ -36,6 +36,25 @@ Class Assunto {
 	}
 
 
+	public function lerassunto($id)
+	{
+		global $pdo;
+		global $msgErro;
+
+		$sql= $pdo->prepare("SELECT * FROM assuntos1 WHERE id=:i");
+		$sql->bindValue(":i", $id);
+		$sql->execute();
+		if($sql->rowCount()>0)
+		{
+			$dados = $sql->fetch();
+			return $dados;
+		}
+		else
+		{
+			return [];
+		}
+	}
+
 	public function novaquestao($titulo, $descricao, $correta, $errada1, $errada2, $errada3)
 	{
 		global $pdo;
@@ -61,6 +80,30 @@ Class Assunto {
 			return true;
 		}
 	}
+
+	public function novoassunto($titulo, $descricao, $imagem)
+	{
+		global $pdo;
+		#verifica se existe assunto
+		$sql = $pdo->prepare("SELECT id FROM assuntos1 WHERE titulo=:t");
+		$sql->bindValue(":t", $titulo);
+		$sql->execute();
+
+		if($sql->rowCount()>0)
+		{
+			return false; #tem cadastro
+		}
+		else
+		{
+			$sql = $pdo->prepare("INSERT INTO assuntos1 (titulo, descricao, imagem) VALUES (:t, :d, :i)");
+			$sql->bindValue(":t", $titulo);
+			$sql->bindValue(":d", $descricao);
+			$sql->bindValue(":i", $imagem);
+			$sql->execute();
+			return true;
+		}
+	}
+
 }
 
 ?>
