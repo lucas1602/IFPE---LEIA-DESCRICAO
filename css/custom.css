@@ -8,6 +8,8 @@ body {height: 100%; margin: 0; padding: 0;}
 .botao2 {border-radius: 15px; width: 225px;}
 .botao3{border-radius: 15px; margin-top: 10px;
 width: 225px;}
+.botao4{border-radius: 15px; margin-top: 10px;
+width: 295px;}
 
 #mostrarnome {font-size: 50px;}
 
