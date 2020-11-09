@@ -60,7 +60,7 @@
 
         if(!empty($titulo) && !empty($descricao) && !empty($imagem))
         {
-            $p->conectar("extensao","localhost","tvpolemicaipojuca","wanderssonipojuca");
+            $p->conectar("extensao","localhost","root","");
             if ($p->msgErro=="")
             {
               if ($p->novoassunto($titulo, $descricao, $imagem))

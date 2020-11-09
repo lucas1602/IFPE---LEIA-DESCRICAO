@@ -10,7 +10,7 @@
     require_once '../banco/db/crud.php';
     $p = new Assunto;
 
-    $p->conectar("extensao","localhost","tvpolemicaipojuca","wanderssonipojuca");
+    $p->conectar("extensao","localhost","root","");
 ?>
 
 <!DOCTYPE html>
@@ -32,15 +32,15 @@
 <body>
     <div class="blue darken-5 white-text center row" style="height: 800px;">
       <div class="col s3"></div>
+      <div class="col s6">
       <?php
         for($i = 1; $i <= 200; $i+=1){
           $dados = $p->lerassunto($i);
           if(!empty($dados)){
             ?>
-              <div class="col s6">
               <div class="card col s6">
                 <div class="card-image waves-effect waves-block waves-light">
-                  <img class="activator" src=<?php echo $dados['imagem']; ?>>
+                  <img height="200" class="activator" src=<?php echo $dados['imagem']; ?>>
                 </div>
                 <div class="card-content">
                   <span class="card-title activator grey-text text-darken-4"><?php echo $dados['titulo']; ?><i class="material-icons right">more_vert</i></span>
@@ -51,13 +51,13 @@
                   <p class="grey-text text-darken-4"><?php echo $dados['descricao']; ?></p>
                 </div>
               </div>
-              </div>
             <?php
           }else{
             break;
           }
         }
       ?>
+      </div>
       <div class="col s3"></div>
     </div>
     <!--Jquery-->
