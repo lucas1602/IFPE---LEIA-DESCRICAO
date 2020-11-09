@@ -38,7 +38,9 @@
                 <a href="calculo.php?figura=circulo" class="waves-effect waves-light btn-large blue lighten-1 botao3">Círculo</a>
                 <a href="calculo.php?figura=trapezio" class="waves-effect waves-light btn-large blue lighten-1 botao3">Trapézio</a>
                 <a href="calculo.php?figura=losango" class="waves-effect waves-light btn-large blue lighten-1 botao3">Losango</a>
-                <a href="triang.php" class="waves-effect waves-light btn-large blue lighten-1 botao3">Triângulos</a>
+                <a href="calculo.php?figura=t-qualquer" class="waves-effect waves-light btn-large blue lighten-1 botao3">Triângulo qualquer</a>
+                <a href="calculo.php?figura=t-retangulo" class="waves-effect waves-light btn-large blue lighten-1 botao3">Triângulo retângulo</a>
+                <a href="calculo.php?figura=t-equilatero" class="waves-effect waves-light btn-large blue lighten-1 botao3">Triângulo equilátero</a>
                 <br>
             </div>
         <?php } elseif($assunto == "volume") {?>

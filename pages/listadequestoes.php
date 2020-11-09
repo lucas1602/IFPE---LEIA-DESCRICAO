@@ -55,8 +55,8 @@
     <div class="blue darken-5 white-text center row" style="height: 800px;">
       <div class="col s1"></div>
       <div class="input-field col s10">
-        <h1><?php echo $dados['titulo'] ?></h1>
-        <h3><?php echo $dados['descricao'] ?></h3>
+        <h3><?php echo $dados['titulo'] ?></h3>
+        <p><?php echo $dados['descricao'] ?></p>
         <br><br>
         <form method="POST" class="cols 12">
           <div class="col s3">
@@ -136,7 +136,7 @@
             </label>
           </div>
           <br><br> 
-          <button type="submit" class="btn green waves-effect waves-light" name="confirmar">Confirmar</button>
+          <button type="submit" class="btn green lighten-2 waves-effect waves-light botao1" name="confirmar">Confirmar</button>
         </form>
         <br>
         <?php
@@ -144,6 +144,10 @@
           if($_GET["alternativa"] == "correta"){
           ?>
             <div class="green">Alternativa correta</div>
+          <?php
+          }else if($_GET["alternativa"] == "nada"){
+          ?>
+            <div class="black">Selecione uma opção</div>
           <?php
           }else{
           ?>
@@ -158,15 +162,19 @@
 
       </div>
       <div class="col s1"></div>
+      <a class="white-text btn blue lighten-1 botao1" href="areamat">Voltar para o menu</a>
     </div>
 
     <?php
+
+    if(isset($_POST["confirmar"])){
       if(isset($_POST["group1"])){
         $tipo = $_POST["group1"];
         header("location: listadequestoes.php?alternativa=$tipo&id=$id");  
       }else{
-        echo "nada selecionado";
+        header("location: listadequestoes.php?alternativa=nada&id=$id");  
       }
+    }
 
     ?>
 

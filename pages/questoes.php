@@ -58,7 +58,7 @@
     if(isset($_POST['botao']))
     {
         $titulo = addslashes($_POST['titulo']);
-        $descricao = addslashes($_POST['descricao']);
+        $descricao = $_POST['descricao'];
         $correta = addslashes($_POST['correta']);
         $errada1 = addslashes($_POST['errada1']);
         $errada2 = addslashes($_POST['errada2']);

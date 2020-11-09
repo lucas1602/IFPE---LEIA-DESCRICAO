@@ -31,14 +31,14 @@
 </head>
 <body>
     <div class="blue darken-5 white-text center row" style="height: 800px;">
-      <div class="col s3"></div>
-      <div class="col s6">
+      <div class="col s1"></div>
+      <div class="col s10">
       <?php
         for($i = 1; $i <= 200; $i+=1){
           $dados = $p->lerassunto($i);
           if(!empty($dados)){
             ?>
-              <div class="card col s6">
+              <div class="card col s3">
                 <div class="card-image waves-effect waves-block waves-light">
                   <img height="200" class="activator" src=<?php echo $dados['imagem']; ?>>
                 </div>
@@ -51,14 +51,14 @@
                   <p class="grey-text text-darken-4"><?php echo $dados['descricao']; ?></p>
                 </div>
               </div>
-            <?php
+          <?php
           }else{
             break;
           }
         }
       ?>
       </div>
-      <div class="col s3"></div>
+      <div class="col s1"></div>
     </div>
     <!--Jquery-->
     <script src="https://code.jquery.com/jquery-3.5.1.js"

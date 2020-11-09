@@ -561,6 +561,9 @@
                 <?php }?>
                 <?php }?>
         <div class="col s3"></div>
+        <br><br>
+        <a class="white-text btn blue lighten-1 botao1" href="areamat">Voltar para o menu</a>
+    </?>
 
     <!--Jquery-->
     <script src="https://code.jquery.com/jquery-3.5.1.js"
