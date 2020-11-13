@@ -38,7 +38,7 @@
           $dados = $p->lerassunto($i);
           if(!empty($dados)){
             ?>
-              <div class="card col s3">
+              <div class="card col s12 m6 l3">
                 <div class="card-image waves-effect waves-block waves-light">
                   <img height="200" class="activator" src=<?php echo $dados['imagem']; ?>>
                 </div>

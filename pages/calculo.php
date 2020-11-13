@@ -32,6 +32,8 @@
 </head>
 <body>
 
+    <?php $botao = "<a class=\"white-text btn blue lighten-1 botao1 center\" href=\"areamat\">Voltar para o menu</a>" ?>
+
     <div class="blue darken-5 white-text center row" style="height: 800px;">
         <div class="col s3"></div>
         <?php if($figura == "quadrado"){ ?>
@@ -42,6 +44,8 @@
                       <input placeholder="Digite o Lado" name="lado" id="lado" type="number" class="center validate white-text blue darken-4">
                       <button type="submit" class="btn blue lighten-1 waves-effect waves-light" name="botao" id="botao">Calcular</button>
                   </form>
+                  <br>
+                  <?php echo $botao ?>
                 </div>
                 <?php if(isset($_POST['lado'])){
                     $valor = $_POST['lado'];
@@ -65,6 +69,8 @@
                       <br><br>
                       <button type="submit" class="btn blue lighten-1 waves-effect waves-light" name="botao" id="botao">Calcular</button>
                   </form>
+                  <br>
+                  <?php echo $botao ?>
                 </div>
                 <?php if(isset($_POST['base'])){
                     $base = $_POST['base'];
@@ -89,6 +95,8 @@
                   <br><br><br>
                   <button type="submit" class="btn blue lighten-1 waves-effect waves-light" name="botao" id="botao">Calcular</button>
                 </form>
+                <br>
+                <?php echo $botao ?>
             </div>
             <?php if(isset($_POST['raio'])){
                 $raio = $_POST['raio'];
@@ -116,6 +124,8 @@
                   <br><br>
                   <button type="submit" class="btn blue lighten-1 waves-effect waves-light" name="botao" id="botao">Calcular</button>
                 </form>
+                <br>
+                <?php echo $botao ?>
               </div>
                 <?php if(isset($_POST['basemaior'])){
                     $basemaior = $_POST['basemaior'];
@@ -140,6 +150,8 @@
                       <br><br>
                       <button type="submit" class="btn blue lighten-1 waves-effect waves-light" name="botao" id="botao">Calcular</button>
                     </form>
+                    <br>
+                    <?php echo $botao ?>
                   </div>
                 <?php if(isset($_POST['diagmaior'])){
                     $diagmaior = $_POST['diagmaior'];
@@ -164,6 +176,8 @@
                     <br><br>
                     <button type="submit" class="btn blue lighten-1 waves-effect waves-light" name="botao" id="botao">Calcular</button>
                   </form>
+                  <br>
+                  <?php echo $botao ?>
                 </div>
                 <?php if(isset($_POST['base'])){
                     $base = $_POST['base'];
@@ -187,6 +201,8 @@
                       <br><br>
                       <button type="submit" class="btn blue lighten-1 waves-effect waves-light" name="botao" id="botao">Calcular</button>
                     </form>
+                    <br>
+                    <?php echo $botao ?>
                 </div>
                 <?php if(isset($_POST['base'])){
                     $base = $_POST['base'];
@@ -210,6 +226,8 @@
                       <br><br><br>
                       <button type="submit" class="btn blue lighten-1 waves-effect waves-light" name="botao" id="botao">Calcular</button>
                   </form>
+                  <br>
+                  <?php echo $botao ?>
                 </div>
                 <?php if(isset($_POST['lado'])){
                     $lado = $_POST['lado'];
@@ -232,6 +250,8 @@
                       <br><br><br>
                       <button type="submit" class="btn blue lighten-1 waves-effect waves-light" name="botao" id="botao">Calcular</button>
                   </form>
+                  <br>
+                  <?php echo $botao ?>
                 </div>
                 <?php if(isset($_POST['aresta'])){
                     $aresta = $_POST['aresta'];
@@ -258,6 +278,8 @@
                     <br><br>
                     <button type="submit" class="btn blue lighten-1 waves-effect waves-light" name="botao" id="botao">Calcular</button>
                   </form>
+                  <br>
+                  <?php echo $botao ?>
                 </div>
                 <?php if(isset($_POST['comprimento'])){
                     $comprimento = $_POST['comprimento'];
@@ -282,6 +304,8 @@
                       <br><br>
                       <button type="submit" class="btn blue lighten-1 waves-effect waves-light" name="botao" id="botao">Calcular</button>
                   </form>
+                  <br>
+                  <?php echo $botao ?>
                 </div>
                 <?php if(isset($_POST['base'])){
                     $base = $_POST['base'];
@@ -305,6 +329,8 @@
                       <br><br>
                       <button type="submit" class="btn blue lighten-1 waves-effect waves-light" name="botao" id="botao">Calcular</button>
                     </form>
+                    <br>
+                    <?php echo $botao ?>
                 </div>
                 <?php if(isset($_POST['raio'])){
                     $raio = $_POST['raio'];
@@ -328,6 +354,8 @@
                     <br><br>
                     <button type="submit" class="btn blue lighten-1 waves-effect waves-light" name="botao" id="botao">Calcular</button>
                   </form>
+                  <br>
+                  <?php echo $botao ?>
                 </div>
                 <?php if(isset($_POST['raio'])){
                     $raio = $_POST['raio'];
@@ -351,6 +379,8 @@
                       <br><br>
                       <button type="submit" class="btn blue lighten-1 waves-effect waves-light" name="botao" id="botao">Calcular</button>
                     </form>
+                    <br>
+                    <?php echo $botao ?>
                 </div>
                 <?php if(isset($_POST['base'])){
                     $base = $_POST['base'];
@@ -374,6 +404,8 @@
                       <br><br><br>
                       <button type="submit" class="btn blue lighten-1 waves-effect waves-light" name="botao" id="botao">Calcular</button>
                     </form>
+                    <br>
+                    <?php echo $botao ?>
                   </div>
                   <?php if(isset($_POST['raio'])){
                     $raio = $_POST['raio'];
@@ -396,6 +428,8 @@
                       <br><br>
                       <button type="submit" class="btn blue lighten-1 waves-effect waves-light" name="botao" id="botao">Calcular</button>
                     </form>
+                    <br>
+                    <?php echo $botao ?>
                 </div>
                 <?php if(isset($_POST['base'])){
                     $base = $_POST['base'];
@@ -419,6 +453,8 @@
                       <br><br><br>
                       <button type="submit" class="btn blue lighten-1 waves-effect waves-light" name="botao" id="botao">Calcular</button>
                   </form>
+                  <br>
+                  <?php echo $botao ?>
                 </div>
                 <?php if(isset($_POST['valor'])){
                     $valor = $_POST['valor'];
@@ -444,6 +480,8 @@
                       <br><br>
                       <button type="submit" class="btn blue lighten-1 waves-effect waves-light" name="botao" id="botao">Calcular</button>
                   </form>
+                  <br>
+                  <?php echo $botao ?>
                 </div>
                 <?php if(!empty($_GET['resultado1']) && !empty($_GET['resultado2'])){
                     $resultado1 = $_GET['resultado1'];
@@ -480,6 +518,8 @@
                       <br><br>
                       <button type="submit" class="btn blue lighten-1 waves-effect waves-light" name="botao" id="botao">Calcular</button>
                   </form>
+                  <br>
+                  <?php echo $botao ?>
                 </div>
                 <?php if(isset($_POST['frac1'])){
                     $frac1 = $_POST['frac1'];
@@ -511,6 +551,8 @@
                       <br><br>
                       <button type="submit" class="btn blue lighten-1 waves-effect waves-light" name="botao" id="botao">Calcular</button>
                   </form>
+                  <br>
+                  <?php echo $botao ?>
                 </div>
                 <?php if(isset($_POST['frac1'])){
                     $frac1 = $_POST['frac1'];
@@ -542,6 +584,8 @@
                       <br><br>
                       <button type="submit" class="btn blue lighten-1 waves-effect waves-light" name="botao" id="botao">Calcular</button>
                   </form>
+                  <br>
+                  <?php echo $botao ?>
                 </div>
                 <?php if(isset($_POST['frac1'])){
                     $frac1 = $_POST['frac1'];
@@ -562,7 +606,6 @@
                 <?php }?>
         <div class="col s3"></div>
         <br><br>
-        <a class="white-text btn blue lighten-1 botao1" href="areamat">Voltar para o menu</a>
     </?>
 
     <!--Jquery-->
