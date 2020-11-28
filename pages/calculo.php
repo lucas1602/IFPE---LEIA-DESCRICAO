@@ -41,7 +41,7 @@
                 <img src="../img/calcular/quadrado.png" alt="" class="responsive-img" width="250px"><br>
                 <div class="input-field col s12">
                   <form method="POST">
-                      <input placeholder="Digite o Lado" name="lado" id="lado" type="number" class="center validate white-text blue darken-4">
+                      <input placeholder="Lado" name="lado" id="lado" type="number" class="center validate white-text blue darken-4">
                       <button type="submit" class="btn blue lighten-1 waves-effect waves-light" name="botao" id="botao">Calcular</button>
                   </form>
                   <br>
@@ -63,9 +63,9 @@
                <img src="../img/calcular/retangulo.png" alt="" class="responsive-img" width="250px"><br>
                <div class="input-field col s12">
                   <form method="POST">
-                      <input placeholder="Digite a base" name="base" id="base" type="number" class="center validate white-text blue darken-4 col s5">
+                      <input placeholder="Base" name="base" id="base" type="number" class="center validate white-text blue darken-4 col s5">
                       <div class="col s2"></div>
-                      <input placeholder="Digite a altura" name="altura" id="altura" type="number" class="center validate white-text blue darken-4 col s5">
+                      <input placeholder="Altura" name="altura" id="altura" type="number" class="center validate white-text blue darken-4 col s5">
                       <br><br>
                       <button type="submit" class="btn blue lighten-1 waves-effect waves-light" name="botao" id="botao">Calcular</button>
                   </form>
@@ -90,7 +90,7 @@
               <div class="input-field col s12">
                 <div class="col s3"></div>
                 <form method="POST">
-                  <input placeholder="Digite o raio" name="raio" id="raio" type="number" class="center validate white-text blue darken-4 col s6">
+                  <input placeholder="Raio" name="raio" id="raio" type="number" class="center validate white-text blue darken-4 col s6">
                   <div class="col s3"></div>
                   <br><br><br>
                   <button type="submit" class="btn blue lighten-1 waves-effect waves-light" name="botao" id="botao">Calcular</button>
@@ -115,11 +115,11 @@
               <div class="input-field col s12">
                 <div class="col s1"></div>
                 <form method="POST">
-                  <input placeholder="Digite a Base Maior" name="basemaior" id="basemaior" type="number" class="center validate white-text blue darken-4 col s3">
+                  <input placeholder="Base Maior" name="basemaior" id="basemaior" type="number" class="center validate white-text blue darken-4 col s3">
                   <div class="col s1"></div>
-                  <input placeholder="Digite a Base Menor" name="basemenor" id="basemenor" type="number" class="center validate white-text blue darken-4 col s3">
+                  <input placeholder="Base Menor" name="basemenor" id="basemenor" type="number" class="center validate white-text blue darken-4 col s3">
                   <div class="col s1"></div>
-                  <input placeholder="Digite a Altura" name="altura" id="altura" type="number" class="center validate white-text blue darken-4 col s3">
+                  <input placeholder="Altura" name="altura" id="altura" type="number" class="center validate white-text blue darken-4 col s3">
                   <div class="col s1"></div>
                   <br><br>
                   <button type="submit" class="btn blue lighten-1 waves-effect waves-light" name="botao" id="botao">Calcular</button>
@@ -144,9 +144,9 @@
                <img src="../img/calcular/losango.png" alt="" class="responsive-img" width="250px"><br>
                <div class="input-field col s12">
                   <form method="POST">
-                      <input placeholder="Digite a Diagonal Maior" name="diagmaior" id="diagmaior" type="number" class="center validate white-text blue darken-4 col s5">
+                      <input placeholder="Diagonal Maior" name="diagmaior" id="diagmaior" type="number" class="center validate white-text blue darken-4 col s5">
                       <div class="col s2"></div>
-                      <input placeholder="Digite a Diagonal Menor" name="diagmenor" id="diagmenor" type="number" class="center validate white-text blue darken-4 col s5">
+                      <input placeholder="Diagonal Menor" name="diagmenor" id="diagmenor" type="number" class="center validate white-text blue darken-4 col s5">
                       <br><br>
                       <button type="submit" class="btn blue lighten-1 waves-effect waves-light" name="botao" id="botao">Calcular</button>
                     </form>
@@ -170,9 +170,9 @@
                <img src="../img/calcular/trianguloqualquer.png" alt="" class="responsive-img" width="250px"><br>
                <div class="input-field col s12">
                   <form method="POST">
-                    <input placeholder="Digite a base" name="base" id="base" type="number" class="center validate white-text blue darken-4 col s5">
+                    <input placeholder="Base" name="base" id="base" type="number" class="center validate white-text blue darken-4 col s5">
                     <div class="col s2"></div>
-                    <input placeholder="Digite a altura" name="altura" id="altura" type="number" class="center validate white-text blue darken-4 col s5">
+                    <input placeholder="Altura" name="altura" id="altura" type="number" class="center validate white-text blue darken-4 col s5">
                     <br><br>
                     <button type="submit" class="btn blue lighten-1 waves-effect waves-light" name="botao" id="botao">Calcular</button>
                   </form>
@@ -195,9 +195,9 @@
                <img src="../img/calcular/trianguloretangulo.png" alt="" class="responsive-img" width="250px"><br>
                <div class="input-field col s12">
                   <form method="POST">
-                      <input placeholder="Digite a base" name="base" id="base" type="number" class="center validate white-text blue darken-4 col s5">
+                      <input placeholder="Base" name="base" id="base" type="number" class="center validate white-text blue darken-4 col s5">
                       <div class="col s2"></div>
-                      <input placeholder="Digite a altura" name="altura" id="altura" type="number" class="center validate white-text blue darken-4 col s5">
+                      <input placeholder="Altura" name="altura" id="altura" type="number" class="center validate white-text blue darken-4 col s5">
                       <br><br>
                       <button type="submit" class="btn blue lighten-1 waves-effect waves-light" name="botao" id="botao">Calcular</button>
                     </form>
@@ -221,7 +221,7 @@
                <div class="input-field col s12">
                   <div class="col s3"></div>
                   <form method="POST">
-                      <input placeholder="Digite o lado" name="lado" id="lado" type="number" class="center validate white-text blue darken-4 col s6">
+                      <input placeholder="Lado" name="lado" id="lado" type="number" class="center validate white-text blue darken-4 col s6">
                       <div class="col s3"></div>
                       <br><br><br>
                       <button type="submit" class="btn blue lighten-1 waves-effect waves-light" name="botao" id="botao">Calcular</button>
@@ -245,7 +245,7 @@
                 <div class="input-field col s12">
                   <form method="POST">
                   <div class="col s3"></div>
-                      <input placeholder="Digite a aresta" name="aresta" id="aresta" type="number" class="center validate white-text blue darken-4 col s6">
+                      <input placeholder="Aresta" name="aresta" id="aresta" type="number" class="center validate white-text blue darken-4 col s6">
                       <div class="col s3"></div>
                       <br><br><br>
                       <button type="submit" class="btn blue lighten-1 waves-effect waves-light" name="botao" id="botao">Calcular</button>
@@ -269,11 +269,11 @@
                 <div class="input-field col s12">
                   <div class="col s1"></div>
                   <form method="POST">
-                    <input placeholder="Digite o Comprimento" name="comprimento" id="comprimento" type="number" class="center validate white-text blue darken-4 col s3">
+                    <input placeholder="Comprimento" name="comprimento" id="comprimento" type="number" class="center validate white-text blue darken-4 col s3">
                     <div class="col s1"></div>
-                    <input placeholder="Digite a Largura" name="largura" id="largura" type="number" class="center validate white-text blue darken-4 col s3">
+                    <input placeholder="Largura" name="largura" id="largura" type="number" class="center validate white-text blue darken-4 col s3">
                     <div class="col s1"></div>
-                    <input placeholder="Digite a Altura" name="altura" id="altura" type="number" class="center validate white-text blue darken-4 col s3">
+                    <input placeholder="Altura" name="altura" id="altura" type="number" class="center validate white-text blue darken-4 col s3">
                     <div class="col s1"></div>
                     <br><br>
                     <button type="submit" class="btn blue lighten-1 waves-effect waves-light" name="botao" id="botao">Calcular</button>
@@ -298,9 +298,9 @@
                <img src="../img/calcular/prismatriangular.png" alt="" class="responsive-img" width="250px"><br>
                <div class="input-field col s12">
                   <form method="POST">
-                      <input placeholder="Digite a Base" name="base" id="base" type="number" class="center validate white-text blue darken-4 col s5">
+                      <input placeholder="Base" name="base" id="base" type="number" class="center validate white-text blue darken-4 col s5">
                       <div class="col s2"></div>
-                      <input placeholder="Digite a altura" name="altura" id="altura" type="number" class="center validate white-text blue darken-4 col s5">
+                      <input placeholder="Altura" name="altura" id="altura" type="number" class="center validate white-text blue darken-4 col s5">
                       <br><br>
                       <button type="submit" class="btn blue lighten-1 waves-effect waves-light" name="botao" id="botao">Calcular</button>
                   </form>
@@ -323,9 +323,9 @@
                <img src="../img/calcular/cilindro.png" alt="" class="responsive-img" width="250px"><br>
                <div class="input-field col s12">
                   <form method="POST">
-                      <input placeholder="Digite o Raio" name="raio" id="raio" type="number" class="center validate white-text blue darken-4 col s5">
+                      <input placeholder="Raio" name="raio" id="raio" type="number" class="center validate white-text blue darken-4 col s5">
                       <div class="col s2"></div>
-                      <input placeholder="Digite a altura" name="altura" id="altura" type="number" class="center validate white-text blue darken-4 col s5">
+                      <input placeholder="Altura" name="altura" id="altura" type="number" class="center validate white-text blue darken-4 col s5">
                       <br><br>
                       <button type="submit" class="btn blue lighten-1 waves-effect waves-light" name="botao" id="botao">Calcular</button>
                     </form>
@@ -348,9 +348,9 @@
                <img src="../img/calcular/cone.png" alt="" class="responsive-img" width="250px"><br>
                <div class="input-field col s12">
                   <form method="POST">
-                    <input placeholder="Digite o Raio" name="raio" id="raio" type="number" class="center validate white-text blue darken-4 col s5">
+                    <input placeholder="Raio" name="raio" id="raio" type="number" class="center validate white-text blue darken-4 col s5">
                     <div class="col s2"></div>
-                    <input placeholder="Digite a altura" name="altura" id="altura" type="number" class="center validate white-text blue darken-4 col s5">
+                    <input placeholder="Altura" name="altura" id="altura" type="number" class="center validate white-text blue darken-4 col s5">
                     <br><br>
                     <button type="submit" class="btn blue lighten-1 waves-effect waves-light" name="botao" id="botao">Calcular</button>
                   </form>
@@ -373,9 +373,9 @@
                <img src="../img/calcular/prismatriangular.png" alt="" class="responsive-img" width="250px"><br>
                <div class="input-field col s12">
                     <form method="POST">
-                      <input placeholder="Digite a Base" name="base" id="base" type="number" class="center validate white-text blue darken-4 col s5">
+                      <input placeholder="Base" name="base" id="base" type="number" class="center validate white-text blue darken-4 col s5">
                       <div class="col s2"></div>
-                      <input placeholder="Digite a altura" name="altura" id="altura" type="number" class="center validate white-text blue darken-4 col s5">
+                      <input placeholder="Altura" name="altura" id="altura" type="number" class="center validate white-text blue darken-4 col s5">
                       <br><br>
                       <button type="submit" class="btn blue lighten-1 waves-effect waves-light" name="botao" id="botao">Calcular</button>
                     </form>
@@ -399,7 +399,7 @@
                 <div class="input-field col s12">
                   <div class="col s3"></div>
                     <form method="POST">
-                      <input placeholder="Digite o raio" name="raio" id="raio" type="number" class="center validate white-text blue darken-4 col s6">
+                      <input placeholder="Raio" name="raio" id="raio" type="number" class="center validate white-text blue darken-4 col s6">
                       <div class="col s3"></div>
                       <br><br><br>
                       <button type="submit" class="btn blue lighten-1 waves-effect waves-light" name="botao" id="botao">Calcular</button>
@@ -422,9 +422,9 @@
                <div class="input-field col s12">
                <img src="../img/exp.png" alt="" class="responsive-img" width="350px"><br><br>
                     <form method="POST">
-                      <input placeholder="Digite a Base" name="base" id="base" type="number" class="center validate white-text blue darken-4 col s5">
+                      <input placeholder="Base" name="base" id="base" type="number" class="center validate white-text blue darken-4 col s5">
                       <div class="col s2"></div>
-                      <input placeholder="Digite o Expoente" name="exp" id="exp" type="number" class="center validate white-text blue darken-4 col s5">
+                      <input placeholder="Expoente" name="exp" id="exp" type="number" class="center validate white-text blue darken-4 col s5">
                       <br><br>
                       <button type="submit" class="btn blue lighten-1 waves-effect waves-light" name="botao" id="botao">Calcular</button>
                     </form>
@@ -448,7 +448,7 @@
                 <div class="input-field col s12">
                   <div class="col s3"></div>
                   <form method="POST">
-                      <input placeholder="Digite o Valor" name="valor" id="valor" type="number" class="center validate white-text blue darken-4 col s6">
+                      <input placeholder=Valor" name="valor" id="valor" type="number" class="center validate white-text blue darken-4 col s6">
                       <div class="col s3"></div>
                       <br><br><br>
                       <button type="submit" class="btn blue lighten-1 waves-effect waves-light" name="botao" id="botao">Calcular</button>
@@ -470,13 +470,13 @@
             <div class="col s12" style="padding: 20px;">
                <div class="input-field col s12">
                   <form method="POST">
-                      <input placeholder="Digite a Fração" name="frac1" id="frac1" type="number" class="center validate white-text blue darken-4 col s5">
+                      <input placeholder="Fração" name="frac1" id="frac1" type="number" class="center validate white-text blue darken-4 col s5">
                       <div class="col s2"></div>
-                      <input placeholder="Digite o Multiplicador" name="frac2" id="frac2" type="number" class="center validate white-text blue darken-4 col s5">
+                      <input placeholder="Multiplicador" name="frac2" id="frac2" type="number" class="center validate white-text blue darken-4 col s5">
                       <br><br>
-                      <input placeholder="Digite o Denominador da Fração" name="frac1de" id="frac1de" type="number" class="center validate white-text blue darken-4 col s5">
+                      <input placeholder="Denominador da Fração" name="frac1de" id="frac1de" type="number" class="center validate white-text blue darken-4 col s5">
                       <div class="col s2"></div>
-                      <input placeholder="Digite o Denominador do Multiplicador" name="frac2de" id="frac2de" type="number" class="center validate white-text blue darken-4 col s5">
+                      <input placeholder="Denominador do Multiplicador" name="frac2de" id="frac2de" type="number" class="center validate white-text blue darken-4 col s5">
                       <br><br>
                       <button type="submit" class="btn blue lighten-1 waves-effect waves-light" name="botao" id="botao">Calcular</button>
                   </form>
@@ -508,13 +508,13 @@
             <div class="col s12" style="padding: 20px;">
                <div class="input-field col s12">
                   <form method="POST">
-                      <input placeholder="Digite a Fração" name="frac1" id="frac1" type="number" class="center validate white-text blue darken-4 col s5">
+                      <input placeholder="Fração" name="frac1" id="frac1" type="number" class="center validate white-text blue darken-4 col s5">
                       <div class="col s2"></div>
-                      <input placeholder="Digite o Multiplicador" name="frac2" id="frac2" type="number" class="center validate white-text blue darken-4 col s5">
+                      <input placeholder="Multiplicador" name="frac2" id="frac2" type="number" class="center validate white-text blue darken-4 col s5">
                       <br><br>
-                      <input placeholder="Digite o Denominador da Fração" name="frac1de" id="frac1de" type="number" class="center validate white-text blue darken-4 col s5">
+                      <input placeholder="Denominador da Fração" name="frac1de" id="frac1de" type="number" class="center validate white-text blue darken-4 col s5">
                       <div class="col s2"></div>
-                      <input placeholder="Digite o Denominador do Multiplicador" name="frac2de" id="frac2de" type="number" class="center validate white-text blue darken-4 col s5">
+                      <input placeholder="Denominador do Multiplicador" name="frac2de" id="frac2de" type="number" class="center validate white-text blue darken-4 col s5">
                       <br><br>
                       <button type="submit" class="btn blue lighten-1 waves-effect waves-light" name="botao" id="botao">Calcular</button>
                   </form>
@@ -541,13 +541,13 @@
             <div class="col s12" style="padding: 20px;">
                <div class="input-field col s12">
                   <form method="POST">
-                      <input placeholder="Digite a Fração" name="frac1" id="frac1" type="number" class="center validate white-text blue darken-4 col s5">
+                      <input placeholder="Fração" name="frac1" id="frac1" type="number" class="center validate white-text blue darken-4 col s5">
                       <div class="col s2"></div>
-                      <input placeholder="Digite o Multiplicador" name="frac2" id="frac2" type="number" class="center validate white-text blue darken-4 col s5">
+                      <input placeholder="Multiplicador" name="frac2" id="frac2" type="number" class="center validate white-text blue darken-4 col s5">
                       <br><br>
-                      <input placeholder="Digite o Denominador da Fração" name="frac1de" id="frac1de" type="number" class="center validate white-text blue darken-4 col s5">
+                      <input placeholder="Denominador da Fração" name="frac1de" id="frac1de" type="number" class="center validate white-text blue darken-4 col s5">
                       <div class="col s2"></div>
-                      <input placeholder="Digite o Denominador do Multiplicador" name="frac2de" id="frac2de" type="number" class="center validate white-text blue darken-4 col s5">
+                      <input placeholder="Denominador do Multiplicador" name="frac2de" id="frac2de" type="number" class="center validate white-text blue darken-4 col s5">
                       <br><br>
                       <button type="submit" class="btn blue lighten-1 waves-effect waves-light" name="botao" id="botao">Calcular</button>
                   </form>
@@ -574,13 +574,13 @@
             <div class="col s12" style="padding: 20px;">
                <div class="input-field col s12">
                   <form method="POST">
-                      <input placeholder="Digite a Fração" name="frac1" id="frac1" type="number" class="center validate white-text blue darken-4 col s5">
+                      <input placeholder="Fração" name="frac1" id="frac1" type="number" class="center validate white-text blue darken-4 col s5">
                       <div class="col s2"></div>
-                      <input placeholder="Digite o Multiplicador" name="frac2" id="frac2" type="number" class="center validate white-text blue darken-4 col s5">
+                      <input placeholder="Divisor" name="frac2" id="frac2" type="number" class="center validate white-text blue darken-4 col s5">
                       <br><br>
-                      <input placeholder="Digite o Denominador da Fração" name="frac1de" id="frac1de" type="number" class="center validate white-text blue darken-4 col s5">
+                      <input placeholder="Denominador da Fração" name="frac1de" id="frac1de" type="number" class="center validate white-text blue darken-4 col s5">
                       <div class="col s2"></div>
-                      <input placeholder="Digite o Denominador do Multiplicador" name="frac2de" id="frac2de" type="number" class="center validate white-text blue darken-4 col s5">
+                      <input placeholder="Denominador do Divisor" name="frac2de" id="frac2de" type="number" class="center validate white-text blue darken-4 col s5">
                       <br><br>
                       <button type="submit" class="btn blue lighten-1 waves-effect waves-light" name="botao" id="botao">Calcular</button>
                   </form>

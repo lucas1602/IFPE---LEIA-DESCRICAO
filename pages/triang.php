@@ -33,14 +33,18 @@
 
 <body>
 
+<?php $botao = "<a class=\"white-text btn blue lighten-1 botao1 center\" href=\"areamat\">Voltar para o menu</a>" ?>
+
 <div class="blue darken-5 white-text center row" style="height: 800px;">
     	<div class="col s3"></div>
     	<div class="col s6" style="padding: 20px;">
-            <img src="../img/triangs.png" alt="" class="responsive-img" width="250px"><br>
+            <img src="../img/triangs.png" alt="" class="responsive-img" width="250px"><br><br><br>
             <a href="calculo.php?figura=t-retangulo" class="waves-effect waves-light btn-large blue lighten-1 botao4">Triângulo retângulo</a>
             <a href="calculo.php?figura=t-equilatero" class="waves-effect waves-light btn-large blue lighten-1 botao4">Triângulo equilátero</a>
             <a href="calculo.php?figura=t-qualquer" class="waves-effect waves-light btn-large blue lighten-1 botao4">Triângulo Qualquer</a>
-    	</div>
+           <br><br><br><br>
+            <?php echo $botao ?>
+        </div>
     	<div class="col s3"></div>
     </div>
 
