@@ -44,7 +44,7 @@
                 </div>
                 <div class="card-content">
                   <span class="card-title activator grey-text text-darken-4"><?php echo $dados['titulo']; ?><i class="material-icons right">more_vert</i></span>
-                  <p><a href="#">Link aqui</a></p>
+                  <p><a href="<?php echo $dados['pagina']?>">Link aqui</a></p>
                 </div>
                 <div class="card-reveal">
                   <span class="card-title grey-text text-darken-4"><?php echo $dados['titulo']; ?><i class="material-icons right">close</i></span>

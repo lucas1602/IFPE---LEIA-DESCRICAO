@@ -81,7 +81,7 @@ Class Assunto {
 		}
 	}
 
-	public function novoassunto($titulo, $descricao, $imagem)
+	public function novoassunto($titulo, $descricao, $imagem, $pagina)
 	{
 		global $pdo;
 		#verifica se existe assunto
@@ -95,10 +95,11 @@ Class Assunto {
 		}
 		else
 		{
-			$sql = $pdo->prepare("INSERT INTO assuntos1 (titulo, descricao, imagem) VALUES (:t, :d, :i)");
+			$sql = $pdo->prepare("INSERT INTO assuntos1 (titulo, descricao, imagem, pagina) VALUES (:t, :d, :i, :p)");
 			$sql->bindValue(":t", $titulo);
 			$sql->bindValue(":d", $descricao);
 			$sql->bindValue(":i", $imagem);
+			$sql->bindValue(":p", $pagina);
 			$sql->execute();
 			return true;
 		}

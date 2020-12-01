@@ -43,7 +43,8 @@
         <form method="POST">
             <input placeholder="Título" name="titulo" type="text" class="center validate white-text blue darken-4">
             <textarea placeholder="Descrição" name="descricao" type="text" class="center validate white-text blue darken-4"></textarea>
-            <textarea placeholder="Link da imagem" name="imagem" type="text" class="center validate white-text blue darken-4"></textarea><br><br>
+            <textarea placeholder="Link da imagem" name="imagem" type="text" class="center validate white-text blue darken-4"></textarea>
+            <textarea placeholder="Link da página" name="pagina" type="text" class="center validate white-text blue darken-4"></textarea><br><br>
             <button type="submit" class="btn blue lighten-1 waves-effect waves-light" name="botao">Postar</button>
         </form>
       </div>
@@ -57,13 +58,14 @@
         $titulo = addslashes($_POST['titulo']);
         $descricao = addslashes($_POST['descricao']);
         $imagem = $_POST['imagem'];
+        $pagina = $_POST['pagina'];
 
-        if(!empty($titulo) && !empty($descricao) && !empty($imagem))
+        if(!empty($titulo) && !empty($descricao) && !empty($imagem) && !empty($pagina))
         {
             $p->conectar("extensao","localhost","root","");
             if ($p->msgErro=="")
             {
-              if ($p->novoassunto($titulo, $descricao, $imagem))
+              if ($p->novoassunto($titulo, $descricao, $imagem, $pagina))
               {
                   echo "Postado com sucesso!";
               }
