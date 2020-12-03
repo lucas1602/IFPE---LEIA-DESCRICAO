@@ -38,12 +38,12 @@
           $dados = $p->lerassunto($i);
           if(!empty($dados)){
             ?>
-              <div class="card col s12 m6 l4">
+              <div class="card col s12 m6 l3">
                 <div class="card-image waves-effect waves-block waves-light">
                   <img height="200" class="activator" src=<?php echo $dados['imagem']; ?>>
                 </div>
                 <div class="card-content">
-                  <span class="card-title activator grey-text text-darken-4"><?php echo $dados['titulo']; ?><i class="material-icons right">more_vert</i></span>
+                  <span style="font-size: 13px"class="card-title activator grey-text text-darken-4" ><?php echo $dados['titulo']; ?><i class="material-icons right">more_vert</i></span>
                   <p><a href="<?php echo $dados['pagina']?>">Link aqui</a></p>
                 </div>
                 <div class="card-reveal">
